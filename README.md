@@ -2,6 +2,8 @@
 
 A demo for a quick tutorial of [PubNub][pubnub]'s new [Data Sync][datasync] service.
 
+![data sync illustration](https://raw.githubusercontent.com/pubnub/data-sync-demo/gh-pages/datasync.png)
+
 ## What is Data Sync?
 
 PubNub Data Sync can work in tandem with PubNub Data Streams, so developers can sync and share structured objects across every device while also using our realtime Publish/Subscribe messaging layer, all wrapped within a single security and access control model.
