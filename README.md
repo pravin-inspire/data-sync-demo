@@ -10,7 +10,7 @@ PubNub Data Sync can work in tandem with PubNub Data Streams, so developers can 
 
 This demonstrates the home automation solution using Data Sync. A *Home Status* object contains the status of door lock, light, and audio setting in the house. When a light is triggered, the *Home Status* object is updated automatically across every smartphone, hub and server that is connected.
 
-![photo](https://raw.githubusercontent.com/pubnub/data-sync-demo/gh-pages/datasync-demo.jpg)
+![photo](https://raw.githubusercontent.com/pubnub/data-sync-demo/gh-pages/datasync-demo.gif)
 
 ## Live Demo
 
