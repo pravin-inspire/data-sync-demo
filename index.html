@@ -11,11 +11,6 @@
 </head>
 
 <body>
-	<header>
-		<h1>Data Sync Demo</h1>
-		<h2>Simulated Smart Home Controller</h2>
-	</header>
-
 	<section class="container">
 		<section class="pref-container">
 			<section class="preference">
@@ -40,7 +35,9 @@
 				</div>
 				
 				<div>
-					<div class="caption">Music</div>
+					<div class="caption">Music
+					<div class="text subtext">Warning: Music will play when you turn it on!</div>
+					</div>
 					<label for="music">
 						<input id="music" type="checkbox">
 						<div class="toggle-button">
@@ -48,9 +45,14 @@
 						</div>
 					</label>
 				</div>
+
+				<div class="try-mobile">
+					<div class="caption text">Try this on your mobile device
+					<div class="subtext"> Scan the QR code <br>or go to <strong>is.gd/NrpONg</strong></div><div>
+					<img class="qrcode" src="images/qrcode.png">
+				</div>
 			</section>
-			<p class="warning">Warning: Music will play when you turn it on!</p>
-			<img class="qrcode" src="images/qrcode.png" align="left">
+
 		</section>
 
 		<section class="house-container">
@@ -67,10 +69,6 @@
 	<audio id="musicPlayer" src="media/illusions.mp3" preload="auto"></audio>
 
 	<p class="small-device-instruction">Access this URL on a larger screen to see the "smart house" in action!</p>
-
-	<section class="github">
-		<a href="https://github.com/pubnub/data-sync-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-	</section>
 
 	<footer>
 		<p class="credit">Music: 

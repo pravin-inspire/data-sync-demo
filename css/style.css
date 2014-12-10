@@ -44,6 +44,9 @@ footer .credit {
 }
 
 /* Layout */
+.container {
+    margin-top: 3em;
+}
 .pref-container {
     margin-bottom: 2em;
 }
@@ -53,12 +56,11 @@ footer .credit {
     }
     .pref-container {
         float: left;
-        width: 33%;
-        padding-right: 15px;
+        width: 40%;
     }
     .house-container {
         float: left;
-        width: 67%;
+        width: 60%;
     }
 }
 
@@ -139,8 +141,7 @@ footer .credit {
 }
 .caption {
     font-size: 1.3em;
-    line-height: 75px;
-    margin: 0 1em;
+    margin: 32px 20px;
 }
 .caption, .toggle-button {
     display: inline-block;
@@ -154,16 +155,32 @@ footer .credit {
 .preference > div:not(:first-child) {
     border-top: 1px #fff solid;
 }
+.preference > div > div {
+    width: 100%;
+}
 label {
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 25px;
 }
-
+.text {
+    font-size: 0.9rem;
+    line-height: 1.2em;
+    width: calc(100% - 160px);
+}
+.subtext {   
+    color: #888;  
+}
+.try-mobile {
+     min-height: 100px;
+     background-color: rgba(240, 240, 240, 0.5);
+}
 .qrcode {
     width: 100px;
     height: 100px;
-    margin-top: 2em;
+    position: absolute;
+    right: 10px;
+    top: 0px;
 }
 
 /* Checkboxes as Toggle-buttons */
@@ -238,7 +255,7 @@ input[type="checkbox"]:disabled + .toggle-button {
     h1 {
         font-size: 2.4em;
     }
-    .house, .warning, .qrcode, .github, .credit {
+    .house, .try-mobile, .github, .credit {
         display: none;
     }
     .small-device-instruction {
