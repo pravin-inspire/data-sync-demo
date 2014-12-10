@@ -264,7 +264,7 @@
         publish_key:   'pub-c-161fc194-bfd2-44e1-af19-0d44c834089d',
     });
 
-    var home = pubnub.sync('xmas-tree');
+    var tree = pubnub.sync('xmas-tree');
 
     // "Smart Xmas Tree" UI
     var lightSwitch = document.getElementById('light');
@@ -273,10 +273,10 @@
     function updateLight() {
         if(lightSwitch.checked) {
             lightsElem.classList.add('on');
-            home.merge({'light': true});
+            tree.merge({'light': true});
         } else {
             lightsElem.classList.remove('on');
-            home.merge({'light': false});
+            tree.merge({'light': false});
         }
     }
 
@@ -291,12 +291,12 @@
     }
 
     // Data Sync Events
-    home.on.ready(function(ref){
+    tree.on.ready(function(ref){
         console.log(JSON.stringify(ref.value()));
         syncLight(ref.value().light);
     });
 
-    home.on.merge(function(ref){
+    tree.on.merge(function(ref){
         console.log(JSON.stringify(ref.value()));
         syncLight(ref.value().light);
     });
